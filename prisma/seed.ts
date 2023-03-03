@@ -3,8 +3,8 @@ import faker from 'faker'
 
 const prisma = new PrismaClient()
 
-const NUMBER_OF_USERS = 4
-const MAX_NUMBER_OF_LINKS = 5
+const NUMBER_OF_USERS = 40;
+const MAX_NUMBER_OF_LINKS = 50;
 
 const data = Array.from({ length: NUMBER_OF_USERS }).map(() => ({
   email: faker.internet.email(),
